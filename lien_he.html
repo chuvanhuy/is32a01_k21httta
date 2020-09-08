@@ -16,5 +16,20 @@
 	<p>Website: <a href="http://mis.hvnh.edu.vn">Khoa Hệ thống thông tin quản lý</a> - <a href="http://www.hvnh.edu.vn">Học viện Ngân hàng</a></p>
 	<p>Điện thoại: 0243.8526419</p>
 	<p>Email: khoahtttql@hvnh.edu.vn</p>
+
+	<form method="post" action="cap_nhat_phan_hoi.php">
+		<p>Họ và tên: <input type="text" name="txtHoTen" value=""></p>
+		<p>Số ĐT: <input type="text" name="txtSDT" value=""></p>
+		<p>Email: <input type="text" name="txtEmail" value=""></p>
+		<p>Mục đích phản hồi
+			<select name="optMucDich">
+				<option value="1">Bảo hành</option>
+				<option value="2">Thanh toán, hóa đơn</option>
+				<option value="3">Khác</option>
+			</select>
+		</p>
+		<p>Nội dung phản hồi: <textarea name="txtNoiDungPhanHoi"></textarea></p>
+		<p><input type="submit" name="btnGuiPhanHoi" value="Gửi phản hồi"></p>
+	</form>
 </body>
 </html>
