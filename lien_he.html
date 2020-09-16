@@ -3,33 +3,35 @@
 <head>
 	<title>IS32A01 | Liên hệ</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1><a href="trang_chu.html">1. Trang chủ</a></h1>	
-	<h1><a href="gioi_thieu.html">2. Giới thiệu</a></h1>
-	<h1><a href="tin_tuc.html">3. Tin tức</a></h1>
-	<h1><a href="san_pham.html">4. Sản phẩm</a></h1>
-	<h1><a href="lien_he.html">5. Liên hệ</a></h1>
+	<div style="width: 950px">
+		<div>
+			<div style="float: left; width: 150px; padding: 10px;"><img src="img/logo.png" style="width: 150px; height: auto;"></div>
+			<div style="float: left;"><h1 style="text-align: right;"><a href="trang_chu.html">Trang chủ</a> | <a href="gioi_thieu.html">Giới thiệu</a> | <a href="tin_tuc.html">Tin tức</a> | <a href="san_pham.html">Sản phẩm</a> | <a href="lien_he.html">Liên hệ</a></h1></div>
+		</div>	
+		<div style="clear: both;">
+			<p>LIÊN HỆ</p>
+			<p>Website: <a href="http://mis.hvnh.edu.vn">Khoa Hệ thống thông tin quản lý</a> - <a href="http://www.hvnh.edu.vn">Học viện Ngân hàng</a></p>
+			<p>Điện thoại: 0243.8526419</p>
+			<p>Email: khoahtttql@hvnh.edu.vn</p>
 
-
-	<p>LIÊN HỆ</p>
-	<p>Website: <a href="http://mis.hvnh.edu.vn">Khoa Hệ thống thông tin quản lý</a> - <a href="http://www.hvnh.edu.vn">Học viện Ngân hàng</a></p>
-	<p>Điện thoại: 0243.8526419</p>
-	<p>Email: khoahtttql@hvnh.edu.vn</p>
-
-	<form method="post" action="cap_nhat_phan_hoi.php">
-		<p>Họ và tên: <input type="text" name="txtHoTen" value=""></p>
-		<p>Số ĐT: <input type="text" name="txtSDT" value=""></p>
-		<p>Email: <input type="text" name="txtEmail" value=""></p>
-		<p>Mục đích phản hồi
-			<select name="optMucDich">
-				<option value="1">Bảo hành</option>
-				<option value="2">Thanh toán, hóa đơn</option>
-				<option value="3">Khác</option>
-			</select>
-		</p>
-		<p>Nội dung phản hồi: <textarea name="txtNoiDungPhanHoi"></textarea></p>
-		<p><input type="submit" name="btnGuiPhanHoi" value="Gửi phản hồi"></p>
-	</form>
+			<form method="post" action="cap_nhat_phan_hoi.php">
+				<p>Họ và tên: <input type="text" name="txtHoTen" value=""></p>
+				<p>Số ĐT: <input type="text" name="txtSDT" value=""></p>
+				<p>Email: <input type="text" name="txtEmail" value=""></p>
+				<p>Mục đích phản hồi
+					<select name="optMucDich">
+						<option value="1">Bảo hành</option>
+						<option value="2">Thanh toán, hóa đơn</option>
+						<option value="3">Khác</option>
+					</select>
+				</p>
+				<p>Nội dung phản hồi: <textarea name="txtNoiDungPhanHoi"></textarea></p>
+				<p><input type="submit" name="btnGuiPhanHoi" value="Gửi phản hồi"></p>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

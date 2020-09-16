@@ -1,0 +1,45 @@
+p {
+	text-align: justify;
+	color: red;
+}
+
+body {
+	font-size: 14px; 
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+a:visited {
+}
+
+a:active {
+	color: red;
+}
+
+ul li {
+	list-style-type: square;
+}
+
+#thanhtich {
+	text-transform: uppercase;
+	color: red;
+	font-weight: bolder;
+}
+
+.chan {
+	font-style: italic;
+	color: orange;
+}
+
+.le {
+	font-weight: bold;
+	color: blue;
+}
