@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IS32A01 | Liên hệ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		var a;
+		a=11;
+		if (a==10) {
+			window.alert(a);
+			a="Sạc điện thoại iPhone có giá "+a+" $. Bạn muốn mua không?";
+			window.alert(a);
+		}
+
+		function luachonsophan(i) {
+			if (i % 2 == 1) {
+				return " xinh gái";
+			} else {
+				return " xấu tính";
+			}
+		}
+
+		// Danh sách người yêu
+		var nguoiyeu = ["Mơ", "Mận", "Đào", "Lê", "Na", "Tú", "Linh"];
+
+		// Dùng vòng lặp FOR để hiển thị tất cả các cô người yêu
+		for (var i = 0; i <= nguoiyeu.length-1; i++) {
+			j=i+1;
+			window.alert("Bạn gái số "+j+" là: "+nguoiyeu[i]+luachonsophan(i));
+		}
+
+		// Hiển thị cô người yêu số 1
+		// window.alert("Tên người yêu thứ 1: "+nguoiyeu[0]);
+
+		// Hiển thị cô người yêu số 2
+		// window.alert("Tên người yêu thứ 2: "+nguoiyeu[1]);
+
+		// Hiển thị cô người yêu số 3
+		// window.alert("Tên người yêu thứ 3: "+nguoiyeu[2]);
+
+		// Hiển thị cô người yêu số 4
+		// window.alert("Tên người yêu thứ 4: "+nguoiyeu[3]);
+
+		// Hiển thị cô người yêu số 5
+		// window.alert("Tên người yêu thứ 5: "+nguoiyeu[4]);
+
+		var xehoi = {
+			
+		}
+	</script>
+</head>
+<body>
+	<div style="width: 950px">
+		<div>
+			<div style="float: left; width: 150px; padding: 10px;"><img src="img/logo.png" style="width: 150px; height: auto;"></div>
+			<div style="float: left;"><h1 style="text-align: right;"><a href="trang_chu.html">Trang chủ</a> | <a href="gioi_thieu.html">Giới thiệu</a> | <a href="tin_tuc.html">Tin tức</a> | <a href="san_pham.html">Sản phẩm</a> | <a href="lien_he.html">Liên hệ</a></h1></div>
+		</div>	
+		<div style="clear: both;">
+			<p>LIÊN HỆ</p>
+			<p>Website: <a href="http://mis.hvnh.edu.vn">Khoa Hệ thống thông tin quản lý</a> - <a href="http://www.hvnh.edu.vn">Học viện Ngân hàng</a></p>
+			<p>Điện thoại: 0243.8526419</p>
+			<p>Email: khoahtttql@hvnh.edu.vn</p>
+
+			<form method="post" action="cap_nhat_phan_hoi.php">
+				<p>Họ và tên: <input type="text" name="txtHoTen" value=""></p>
+				<p>Số ĐT: <input type="text" name="txtSDT" value=""></p>
+				<p>Email: <input type="text" name="txtEmail" value=""></p>
+				<p>Mục đích phản hồi
+					<select name="optMucDich">
+						<option value="1">Bảo hành</option>
+						<option value="2">Thanh toán, hóa đơn</option>
+						<option value="3">Khác</option>
+					</select>
+				</p>
+				<p>Nội dung phản hồi: <textarea name="txtNoiDungPhanHoi"></textarea></p>
+				<p>
+					<input type="submit" name="btnGuiPhanHoi" value="Gửi phản hồi">
+					<input type="button" name="btnXinChao" value="Xin chào" onclick="window.alert('Xin chào bạn!')">
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
